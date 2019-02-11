@@ -66,7 +66,7 @@ void draw()
   // draw coordinates, the tree can't smoothly re-enter the frame (since rect() doesn't like negative coordinates),
   // so we just set it to 0.
   for(Tree t : trees){
-    if(t.currentX > width)t.setXPos(0);
+    if(t.currentX > width)t.setXPos(-100);
     t.drawObject();
   }
 }
